@@ -15,13 +15,45 @@
     <title>Loco Nutrition</title>
 </head>
 <body>
-    
-</body>
-</html>
+<a href="index.php" class="previous">&laquo; Previous</a>
+
 <center>
 
 <img src="./assets/img/20231108_110143_0001.PNG" alt="HTML5 Icon" style="width:270px;height:350px;">
 </center>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+
+
 
 <center>
 <H1 style="background-color:rgb(255, 255, 255);">Our Products</H1>

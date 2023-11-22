@@ -13,15 +13,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loco Nutrition</title>
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        color {
-          white
-        }
-        
-  </style>
+
+  <style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+footer {
+  text-align: left;
+  padding: 10px 0;
+  background-color: #6b6868;
+  color: #fff;
+}
+</style>
 </head>
 <body>
+<footer>
+<a href="login.php" class="previous">&laquo; Previous</a>
+
+  </footer>
 
     <center>
       <img src="./assets/img/20231108_110143_0000.PNG" alt="HTML5 Icon" style="width:270px;height:350px;">
@@ -38,6 +68,15 @@
     </a>
     
   <?php } ?>
+  <br>  <br>  <br>  <br>  <br>
+  
+  
+<footer>
+<center>
+    <p>&copy; 2023 Product Site</p>
+    </center>
+  </footer>
+  
 
   </center>
 </body>

@@ -140,9 +140,9 @@
     
   </style>
 </head>
-<body bgcolor="black">
+<body bgcolor="">
 <center>
-      <img src="./assets/img/Space Nutrition.PNG" alt="HTML5 Icon" style="width:400px;height:400px;">
+      <img src="./assets/img/20231108_110143_0000.png" alt="HTML5 Icon" style="width:270px;height:350px;">
     </center>
 <center>
 
@@ -152,7 +152,7 @@
     <form class="modal-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="./assets/img/Space Nutrition.PNG" alt="Avatar" class="avatar">
+        <img src="./assets/img/20231108_110143_0000.png" alt="Avatar" class="avatar">
       </div>
       <center>
       <div class="container">
