@@ -12,15 +12,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Nutrition</title>
+    <title>Loco Nutrition</title>
 </head>
-<body bgcolor="black">
+<body>
     
 </body>
 </html>
 <center>
 
-<img src="./assets/img/Space Nutrition.PNG" alt="HTML5 Icon" style="width:400px;height:400px;">
+<img src="./assets/img/20231108_110143_0001.PNG" alt="HTML5 Icon" style="width:270px;height:350px;">
 </center>
 
 <center>

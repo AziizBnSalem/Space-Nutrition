@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Nutrition</title>
+    <title>Loco Nutrition</title>
     <style>
         body {font-family: Arial, Helvetica, sans-serif;
         Center}
@@ -462,7 +462,7 @@
     <form class="modall-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modall">&times;</span>
-        <img src="./assets/img/Space Nutrition.PNG" alt="Avatar" class="avatar">
+        <img src="./assets/img/" alt="Avatar" class="avatar">
       </div>
       <center>
       <div class="container">
