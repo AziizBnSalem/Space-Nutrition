@@ -141,8 +141,9 @@
   </style>
 </head>
 <body bgcolor="">
+  <a href="test.php">Click me</a>
 <center>
-      <img src="./assets/img/20231108_110143_0000.png" alt="HTML5 Icon" style="width:270px;height:350px;">
+      <a href="index.php" ><img src="./assets/img/20231108_110143_0000.png" alt="HTML5 Icon" style="width:270px;height:350px;"></a>
     </center>
 <center>
 
@@ -486,7 +487,7 @@
     </form>
   </div>
   </center>
-  <a href="index.php">Home page</a>
+  
   <script>
     // Get the modal
     var modall = document.getElementById('id02');

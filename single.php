@@ -4,6 +4,10 @@
     array("image"=>"./assets/img/jKz7a4e1fmghTS3AmHIO.webp", "title"=>"mon titre"),
     array("image"=>"./assets/img/ytOPULLQq7o5ABlAyIvd.webp", "title"=>"mon titre"),
     array("image"=>"./assets/img/zLAcbrjq2gMM3bCNhIYC.webp", "title"=>"mon titre"),
+    array("image"=>"./assets/img/1.webp", "title"=>"mon titre"),
+    array("image"=>"./assets/img/2.webp", "title"=>"mon titre"),
+    array("image"=>"./assets/img/3.webp", "title"=>"mon titre"),
+    array("image"=>"./assets/img/4.webp", "title"=>"mon titre"),
    
   );
 ?>

@@ -43,15 +43,13 @@ footer {
   text-align: left;
   padding: 10px 0;
   background-color: #6b6868;
-  color: #fff;
+  color: black;
 }
 </style>
 </head>
 <body>
-<footer>
 <a href="login.php" class="previous">&laquo; Previous</a>
 
-  </footer>
 
     <center>
       <img src="./assets/img/20231108_110143_0000.PNG" alt="HTML5 Icon" style="width:270px;height:350px;">
