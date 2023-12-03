@@ -55,6 +55,12 @@ a:hover {
 .round {
   border-radius: 50%;
 }
+footer {
+  text-align: left;
+  padding: 5px 0;
+  background-color: #6b6868;
+  color: black;
+}
 </style>
 
 
@@ -70,6 +76,7 @@ a:hover {
   <?php } ?>
 
   </center>
-
+  
+<br><br><br>
 </body>
 </html>
