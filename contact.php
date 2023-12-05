@@ -6,7 +6,7 @@
         VALUES ('" . $_POST['name'] . "', '" . $_POST['email'] . "', '" . $_POST['message'] . "');";
     
         if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            echo "Thank you for your Feedback";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -14,79 +14,62 @@
         $conn->close();
     }
 ?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loco Nutrition</title>
 </head>
 <style>
-
-
-html{
-  font-size: 85.5%;
-  scroll-behavior:smooth;
-  scroll-padding-top: 10rem;
-  overflow-x: hidden;
-}
-header{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.950), rgba(0, 0, 0, 0.300)),url(./img/Background.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-ul{
-  list-style: none;
-  float: right;
+header {
   display: flex;
-  position: absolute;
-  left: 500px;
-}
-ul li a{
-  text-decoration: none;
-  color: #ffffff;
-  padding: 6px 20px ;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  margin: 10px;
-  transition: 0.10s ease;
-}
-ul li a:hover{
-  background: #ffffff94;
-  color: #000000;
-}
-label{
+  align-items: right;
+  justify-content: space-between;
+  background-color: #B6BBC4;
+  }
 
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-body {
-    font-family: muli-regular;
-    color: black;
-    font-size: 13px;
-    margin: 0
-}
-input,textarea,select,button {
-    font-family: muli-regular;
-    color: black;
-    font-size: 13px
-}
-h1 {
-    margin: 0
-}
+  img {
+  height: 150px;
+  }
+
+  li {
+  display: flex;
+  align-items:right;
+ /* Use flexbox to align the images */
+  }
+  
+  nav ul li {
+  display: inline;
+  margin-right: 30px;
+  }
+
+  nav ul li a {
+  text-decoration: none;
+  color: black;
+
+  }
+
+  #Formulaire{
+    text-align:center;
+  }
+
 </style>
 
 <body>
     <header>
-    <center>
     <?php include("./lib/nav.php") ?>
 
     <br><br><br><br>
+<a href="Home.php">
+    <img src="assets\img\20231108_110143_0001.png" id="logo">
+</a>
+ 
+  </header>
+
+
     <br><br><br><br>
-    <form action="./contact.php" method="post">
+    <form action="./contact.php" method="post" id="Formulaire">
         <label for="name">Full Name</label>
         <input id="name" name="name" type="text"/>
         <br/>
@@ -102,7 +85,6 @@ h1 {
         <input type="submit" value="submit">
     </form>
     </center>
-</header>
 
 </body>
 </html>

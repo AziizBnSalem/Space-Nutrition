@@ -9,101 +9,80 @@
         $sql = "SELECT * FROM `product`";
     }
 
-    $result = $conn->query($sql);
-    $conn->close();
+      $result = $conn->query($sql);
+      $conn->close();
 ?>
 
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loco Nutrition</title>
-</head>
-
 <style>
 
 
-html{
-  font-size: 85.5%;
-  scroll-behavior:smooth;
-  scroll-padding-top: 10rem;
-  overflow-x: hidden;
-}
-header{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.300)),url(./img/Background.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-ul{
-  list-style: none;
-  float: right;
+  header {
   display: flex;
-  position: absolute;
-  left: 350px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #B6BBC4;
+  }
 
-}
-ul li a{
+  img {
+  height: 150px;
+  }
+
+
+  nav ul li {
+  display: inline;
+  margin-right: 30px;
+  }
+
+  nav ul li a {
   text-decoration: none;
-  color: #ffffff;
-  padding: 6px 20px ;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-  margin: 10px;
-  transition: 0.10s ease;
-  
-}
-ul li a:hover{
-  background: #ffffff94;
-  color: #000000;
-}
-label{
+  color: black;
+  }
 
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-body {
-    font-family: muli-regular;
-    color: black;
-    font-size: 13px;
-    margin: 0
-}
-input,textarea,select,button {
-    font-family: muli-regular;
-    color: black;
-    font-size: 15px
-}
-h1 {
-    margin: 0;
-}
-form {
-  position: absolute;
-  left: 1%
-}
-img {
-  margin-right: 20px;
-  display: block;
+  label{
+  text-align: right;
+  }
 
-}
-
-
+  li {
+  display: flex; /* Use flexbox to align the images */
+  }
+  #Formm{
+  border-style:solid ;
+  }
 
 
 </style>
 
+
+
+
 <body>
   <header>
-    <?php include("./lib/nav.php") ?>
-<br>
+  <a href="Home.php">
+    <img  src="assets\img\20231108_110143_0001.png" alt="Logo">
+</a>
     <form>
         <label for="search">Search</label>
         <input type="text" name="search" id="search" placeholder="Search" value="<?= $search ?>">
         <input type="submit" value="Search"/>
     </form>
+    <nav>
+      <ul>
+      <?php include("./lib/nav.php") ?></body>
+
+      </ul>
+    </nav>
+   
+</header>
     <br><br><br>
-    <ceNter>
-    <ul name="for">
+    <center>
+    <li id="Formm">
+      
         <?php 
             if ($result->num_rows > 0) {
                 // output data of each row
@@ -118,8 +97,7 @@ img {
                 echo "0 results";
             }
         ?>
-    </ul>
-    </ceNter> 
-          </header>
+    </li>
+    </center>
 </body>
 </html>

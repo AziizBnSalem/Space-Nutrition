@@ -1,92 +1,62 @@
-<!DOCTYPE html>
-<html lang="fr">
+
+  <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Loco</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loco Nutrition</title>
 </head>
 <style>
-    body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
+body{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 header {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #B6BBC4;
+  
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+#logo {
+  height: 150px;
+}
+
+img {
+  height: 540px;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-.product {
-  text-align: center;
-  margin: 20px;
-}
-
-.product img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-}
 </style>
 <body>
-  <header>
-    <h1>Boutique de Compléments Alimentaires</h1>
-    <?php include("./lib/nav.php") ?></body>
-
+<header>
+<a href="Home.php">
+    <img src="assets\img\20231108_110143_0001.png" id="logo">
+</a>
     <nav>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Produits</a></li>
-        <li><a href="#">À Propos</a></li>
-        <li><a href="#">Contact</a></li>
+      <?php include("./lib/nav.php") ?></body>
+
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="product">
-      <img src="whey-protein.jpg" alt="Protéine de Lactosérum">
-      <h2>Protéine de Lactosérum</h2>
-      <p>Protéine de haute qualité pour la récupération musculaire et la croissance.</p>
-      <p>€29.99</p>
-      <button>Ajouter au Panier</button>
-    </section>
-    <section class="product">
-      <img src="vitamin-supplements.jpg" alt="Compléments Alimentaires en Vitamines">
-      <h2>Compléments Alimentaires en Vitamines</h2>
-      <p>Compléments alimentaires pour un apport en vitamines essentielles.</p>
-      <p>€19.99</p>
-      <button>Ajouter au Panier</button>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Boutique de Compléments Alimentaires</p>
-  </footer>
+
+  <a href="Home.php">
+  <img  src="assets\img\20231108_110143_0001.png" id="Logoo">
+
+  </a>
 </body>
 </html>
 
- 
