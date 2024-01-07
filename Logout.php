@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recap</title>
-</head>
-<body>
-    <h1>Page logout</h1>
-    <?php include("nav.php") ?>
-</body>
-</html>
+<?php 
+    // destroy session
+    session_start();
+    session_unset();
+    session_destroy();
+    
+    // redirect to home page
+    header('Location: /Loco-Nutrition/Home.php');
+        die;
+?>

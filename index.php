@@ -1,4 +1,5 @@
 <?php 
+
     include("./lib/dbconnect.php");
 
     $search = '';
@@ -30,7 +31,11 @@
   }
 
   img {
-  height: 150px;
+  
+
+  height: 80px;
+  width: 60px;
+
   }
 
 
@@ -54,8 +59,29 @@
   #Formm{
   border-style:solid ;
   }
+ 
+  hr.center-ball {
+    background: grey;
+}
+hr {
+    border: 0;
+    height: 9px;
+    width: 80%;
+    position: relative;
+    margin: 30px auto;
+}
 
-
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 01.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1 px;
+     }
 </style>
 
 
@@ -99,5 +125,14 @@
         ?>
     </li>
     </center>
+    <br>
+  <center>
+  <hr class="center-ball">
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2019 All Rights Reserved
+    </p>
+  </section>
+  </center>
 </body>
 </html>
